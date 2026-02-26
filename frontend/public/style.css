@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+.Container{
+    background-color: rgb(167, 167, 213);
+    display: flex;
+    justify-content: center;
+    /* margin: 25%; */
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    align-items: center;
+
+}
+
+.nameContainer{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: white;
+    color:black;
+}
+
+button{
+    margin-left: 35%;
+    background-color:black;
+}
+.heading{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    color:white;
+    margin-top: 0%;
+}
+/* .label{
+    display: flex;
+    justify-content: center;
+    margin:2%;
+} */
