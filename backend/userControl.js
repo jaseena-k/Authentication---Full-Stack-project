@@ -72,15 +72,15 @@ export const deleteDelails = async (req, res) => {
 export const postLoginDetails = async (req, res) => {
     try {
         const { password, username } = req.body
-
+        console.log('password :: ',password);
+        
         const user = await UserDetails.findOne({ username })
-                    console.log("user",user.password)
         if (!user) {
             res.status(404).json({ message: "username not found" })
         }
         
         const isMatch = await bcrypt.compare(password, user.password);
-
+        console.log("isMatch",isMatch)
         if (!isMatch) {
             return res.status(400).json({ message: "login status invalid" });
         }
