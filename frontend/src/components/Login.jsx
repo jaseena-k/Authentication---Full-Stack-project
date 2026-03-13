@@ -44,6 +44,8 @@ function Login() {
 
    async function handleSignUp(e){
     e.preventDefault()
+
+
      try {
             const res = await axios.post(
                 "http://localhost:5000/api/userDetails",
@@ -71,6 +73,7 @@ function Login() {
 }
 
     return (
+         
         <div className="Container">
             <form>
                 <h1 className="heading">{isSignup ?"signUp":"Login" }</h1>
@@ -103,9 +106,11 @@ function Login() {
                     </span>
                     </p>
             </form>
+             
         </div>
 
     )
+
 }
 
 export default Login
